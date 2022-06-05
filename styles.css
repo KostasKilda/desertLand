@@ -1,0 +1,66 @@
+body{
+    background-color: #f5d9d5;
+}
+
+nav{
+    font-family: 'Raleway', sans-serif; 
+    font-weight: 400;
+}
+
+#spacing-reset{
+    margin: 0;
+    margin-left: 0;
+    padding-left: 0;
+    padding: 0;
+}
+.navbar-logo{
+    font-weight: 700;
+    color: #EB5353;
+}
+
+.navbar-element{
+    font-size: 1.2em;
+}
+
+.navbar-spacing{
+    margin:0 0.1em
+}
+
+.greeting-image-build{
+    max-width: 100%;
+    height: auto;
+    display: inline-block;
+}
+
+h2{
+    text-align: center;
+    padding: 0.5em 0;
+    
+}
+
+.wrapper-header{
+    font-weight: 600;
+}
+
+
+.greeting-image-text{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 0.8em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2em;
+}
+
+@media (min-width: 560px){
+    .greeting-image-text{
+        font-size: 1em;
+    }
+}
+
+@media (min-width: 1260px){
+    .greeting-image-text{
+        font-size: 1.2em;
+    }
+}
