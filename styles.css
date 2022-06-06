@@ -14,8 +14,25 @@ nav{
     padding-right: 0;
 }
 
-.carousel-spacing{
-    margin-top: 40rem;
+h1{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 700;
+    font-size: 2.5em;
+}
+
+.desertLand-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 52vh;
+    margin-bottom: 3em;
+}
+
+.welcome-desertland{
+    font-family: 'Raleway', sans-serif; 
+    font-weight: 700;
+    color: #ff0800;
 }
 
 .navbar-logo{
@@ -76,7 +93,7 @@ h2{
 }
 
 .carousel-inner .carousel-image-sizing{
-    height: 40vh;
+    height: calc(40vh + 56px);
 }
 
 .carousel-image-sizing{
@@ -104,6 +121,10 @@ h2{
     .carousel-inner .carousel-image-sizing{
         min-height: 320px;
     }
+
+    h1{
+        font-size: 3.2em;
+    }
 }
 
 /* Bootstrap break off */
@@ -128,8 +149,16 @@ h2{
     }
 
     .carousel-inner .carousel-image-sizing{
-        height: 60vh;
+        height: calc(55vh + 60.8px);
         min-height: 460px;
+    }
+
+    .desertLand-wrapper{
+        height: 35vh;
+    }
+
+    h1{
+        font-size: 3.6em;
     }
 }
 
@@ -154,7 +183,10 @@ h2{
     }
 
     .carousel-inner .carousel-image-sizing{
-        height: 60vh;
         min-height: 520px;
+    }
+
+    h1{
+        font-size: 6em;
     }
 }
