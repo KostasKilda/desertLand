@@ -13,6 +13,11 @@ nav{
     padding-left: 0;
     padding-right: 0;
 }
+
+.carousel-spacing{
+    margin-top: 40rem;
+}
+
 .navbar-logo{
     font-weight: 700;
     color: #EB5353;
@@ -26,7 +31,7 @@ nav{
     margin:0 0.1em
 }
 
-.greeting-image-build{
+.main-section-img{
     max-width: 100%;
     height: auto;
 }
@@ -65,7 +70,27 @@ h2{
     display: none;
 }
 
+.image-table{
+    display: flex;
+    justify-content: space-around;
+}
 
+.carousel-inner .carousel-image-sizing{
+    height: 40vh;
+}
+
+.carousel-image-sizing{
+    object-fit: cover;
+    width: 100%;
+}
+
+.carousel-indicators{
+    display: none;
+}
+
+.navbar-space-out{
+    position: relative;
+}
 
 @media (min-width: 560px){
     .main-section{
@@ -74,6 +99,10 @@ h2{
 
     .wrapper-header{
         font-size: 1.6rem;
+    }
+
+    .carousel-inner .carousel-image-sizing{
+        min-height: 320px;
     }
 }
 
@@ -92,6 +121,15 @@ h2{
         display: flex;
         justify-content: center;
         color: crimson;
+    }
+
+    .carousel-indicators{
+        display: flex;
+    }
+
+    .carousel-inner .carousel-image-sizing{
+        height: 60vh;
+        min-height: 460px;
     }
 }
 
@@ -113,5 +151,10 @@ h2{
 
     .wrapper-header{
         font-size: 2.4rem;
+    }
+
+    .carousel-inner .carousel-image-sizing{
+        height: 60vh;
+        min-height: 520px;
     }
 }
