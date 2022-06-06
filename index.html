@@ -23,14 +23,14 @@
 
 
     <link rel="stylesheet" href="styles.css">
-    <title>Candy shop</title>
+    <title>Sweet shop</title>
 </head>
 
 <body>
     <!-- Navigation bar - Bootstrap -->
     <nav class="navbar navbar-expand-lg navbar-light bg-dark navbar-dark sticky-top ">
         <div class="container-fluid">
-            <a class="navbar-brand navbar-logo" href="#">CandyShop</a>
+            <a class="navbar-brand navbar-logo" href="#">DesertLand</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navigationLinks"
                 aria-controls="navigationLinks" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -57,9 +57,70 @@
         </div>
     </nav>
 
-    <div class="container-fluid" id="spacing-reset">
+    <div class="navbar-space-out">
+        <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-bs-target="#mainCarousel" data-bs-slide-to="0" class="active">
+                </li>
+                <li data-bs-target="#mainCarousel" data-bs-slide-to="1">
+                </li>
+                <li data-bs-target="#mainCarousel" data-bs-slide-to="2">
+                </li>
+                <li data-bs-target="#mainCarousel" data-bs-slide-to="3">
+                </li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="carousel-content">
+                        <img src="imgs/gummyWorms.jpg" alt="" class="carousel-image-sizing">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="carousel-content">
+                        <img src="imgs/miniCandies.jpg" class="carousel-image-sizing" alt="">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="carousel-content">
+                        <img src="imgs/doughnuts.jpg" class="carousel-image-sizing" alt="">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="carousel-content">
+                        <img src="imgs/jellyRolls.jpg" class="carousel-image-sizing" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+
+    <div class="container-fluid carousel-spacing" id="spacing-reset">
         <div class="row g-0">
-            <div class="col-lg-6"><img src="imgs/hand2.png" class="greeting-image-build rounded" alt="doughnut image">
+            <div class="wrapper-section-reverse">
+                <div class="col-lg-6"><img src="imgs/milk.png" class="main-section-img rounded" alt=""></div>
+                <div class="col-lg-6 p-lg-5 p-sm-5 main-section">
+                    <h2 class="wrapper-header">Wide selection of treats</h2>
+                    <div class="candy-logo">
+                        <img src="imgs/lolli_icon.png" alt="Lollipop icon">
+                    </div>
+                    <div>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur laboriosam eius voluptatem
+                        ipsa animi officiis voluptates, sed deserunt corrupti excepturi dolores distinctio. Nesciunt
+                        veniam sunt ad voluptate nulla velit earum!
+                        Sed voluptates, soluta illo distinctio quaerat pariatur, animi vel magnam minus necessitatibus
+                        recusandae eum quam perferendis reprehenderit. Incidunt quod nam debitis, at, vel exercitationem
+                        aliquid explicabo repellendus quis cumque voluptatum.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid section-position" id="spacing-reset">
+        <div class="row g-0">
+            <div class="col-lg-6"><img src="imgs/gumball.png" class="main-section-img rounded"
+                    alt="Gumball machine image">
             </div>
             <div class="col-lg-6 p-lg-5 p-sm-5 main-section">
                 <h2 class="wrapper-header">What we offer</h2>
@@ -85,31 +146,21 @@
     </div>
 
     <div class="container-fluid section-position" id="spacing-reset">
-        <div class="row g-0">
-            <div class="wrapper-section-reverse">
-                <div class="col-lg-6"><img src="imgs/milk.png" class="greeting-image-build rounded" alt=""></div>
-                <div class="col-lg-6 p-lg-5 p-sm-5 main-section">
-                    <h2 class="wrapper-header">Wide selection of treats</h2>
-                    <div class="candy-logo">
-                        <img src="imgs/lolli_icon.png" alt="Lollipop icon">
-                    </div>
-                    <div>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur laboriosam eius voluptatem
-                        ipsa animi officiis voluptates, sed deserunt corrupti excepturi dolores distinctio. Nesciunt
-                        veniam sunt ad voluptate nulla velit earum!
-                        Sed voluptates, soluta illo distinctio quaerat pariatur, animi vel magnam minus necessitatibus
-                        recusandae eum quam perferendis reprehenderit. Incidunt quod nam debitis, at, vel exercitationem
-                        aliquid explicabo repellendus quis cumque voluptatum.
-                    </div>
-                </div>
+        <div class="row g-0 image-table">
+            <div class="col-lg-2 col-md-5 col-10">
+                <img src="imgs/cake.jpg" class="main-section-img rounded-4" alt="doughnut image">
             </div>
-
-
+            <div class="col-lg-2 col-md-5 col-10">
+                <img src="imgs/m&m's.jpg" class="main-section-img rounded-4" alt="doughnut image">
+            </div>
+            <div class="col-lg-2 col-md-5 col-10">
+                <img src="imgs/mini-cake.jpg" class="main-section-img rounded-4" alt="doughnut image">
+            </div>
+            <div class="col-lg-2 col-md-5 col-10">
+                <img src="imgs/sweets.jpg" class="main-section-img rounded-4" alt="doughnut image">
+            </div>
         </div>
     </div>
-
-
-
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
         integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
