@@ -1,6 +1,5 @@
 body{
-    background-color: #f5d9d5;
-    /* background-color: green; */
+    background-color: #FAD1AF;
 }
 
 nav{
@@ -28,7 +27,7 @@ h1{
     justify-content: center;
     align-items: center;
     height: 52vh;
-    margin-bottom: 3em;
+    margin-bottom: 2em;
 }
 
 .welcome-desertland{
@@ -109,7 +108,7 @@ h2{
 
 .desertLand-menu-wrapper{
     font-family: 'Roboto', sans-serif;
-    margin: 4em 0 1.4em 0;
+    margin: 2.5em 0 1.4em 0;
     font-weight: 700;
 }
 
@@ -123,6 +122,7 @@ h2{
 .price-panel-wrapper{
     display: flex;
     justify-content: center;
+    background-color: #f5d9d5;
 }
 
 .price-panel-img{
@@ -176,6 +176,78 @@ h2{
     border-top-right-radius: 5px;
 }
 
+.price-panel-pricing:first-of-type{
+    border-bottom-left-radius: 5px;
+}
+
+.price-panel-pricing:last-of-type{
+    border-bottom-right-radius: 5px;
+}
+
+/* Enquire button classes */
+.enquire-button-outter-wrapper{
+    margin: 2em 0 4em 0;
+    display: flex;
+    justify-content: center;
+}
+
+.enquire-button-outter-wrapper button{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 2px;
+    color: white;
+    background-color: #F89883;
+    width: 100px;
+    height: auto;
+}
+
+.enquire-button-outter-wrapper button:hover ,.enquire-button-outter-wrapper button:active{
+    background-color: #E97451;
+    transform: translatey(-5px);
+    transition: 0.1s;
+}
+
+
+/* About us/bottom styles */
+.about-us-wrapper{
+    width: 100%;
+    padding: 1em 1em;
+    background-color: black;
+}
+
+.about-us-header{
+    font-family: 'Raleway', sans-serif; 
+    font-weight: 700;
+    color: white;
+    font-size: 1em;
+    margin: 0.4em 0;
+}
+
+.about-us{
+    font-family: 'Raleway', sans-serif; 
+    font-weight: 300;
+    font-size: 0.6em;
+    color: white;
+}
+
+.about-us a{
+    font-family: 'Roboto', sans-serif;
+}
+
+.rights-reserved{
+    margin: 2em 0 0 0;
+    font-family: 'Roboto', sans-serif; 
+    font-weight: 400;
+    color: white;
+    font-size: 0.6em;
+}
+
+.enclosed{
+    font-weight: 300;
+}
+
 @media (min-width: 560px){
     .main-section{
         font-size: 1em;
@@ -220,6 +292,8 @@ h2{
         color: crimson;
     }
 
+
+
     .carousel-indicators{
         display: flex;
     }
@@ -237,6 +311,11 @@ h2{
         font-size: 3.6em;
     }
 
+    .desertLand-menu-wrapper{
+        font-size: 2.6em;
+        margin: 2em 0 0.4em 0;
+    }
+
     .price-panel-header{
         font-size: 1.6rem;
     }
@@ -247,6 +326,25 @@ h2{
 
     .price-panel-pricing{
         font-size: 1rem;
+    }
+
+    .enquire-button-outter-wrapper{
+        margin: 4em 0 6em 0;
+    }
+
+    .enquire-button-outter-wrapper button{
+        width: 140px;
+        height: 40px;
+        font-size: 1.2em;
+        border: 2px solid black;
+    }
+
+    .about-us-header{
+        font-size: 1.2em;
+    }
+
+    .about-us, .rights-reserved{
+        font-size: 0.8em;
     }
 }
 
@@ -261,6 +359,11 @@ h2{
 
     .desertLand-menu-wrapper{
         margin: 6em 0 2em 0;
+    }
+
+    .desertLand-menu-wrapper{
+        font-size: 2.8em;
+        margin: 2.4em 0 0.6em 0;
     }
 
     .price-panel-img{
@@ -287,6 +390,20 @@ h2{
     .price-panel-img:last-of-type ,.price-panel-header:last-of-type, .price-panel-description:last-of-type, .price-panel-pricing:last-of-type{
         border-right: 2px solid black;
     }
+
+    .enquire-button-outter-wrapper button{
+        width: 200px;
+        height: 50px;
+        font-size: 1.6em;
+    }
+
+    .about-us-header{
+        font-size: 1.4em;
+    }
+
+    .about-us, .rights-reserved{
+        font-size: 1em;
+    }
 }
 
 
@@ -307,6 +424,11 @@ h2{
         font-size: 6em;
     }
 
+    .desertLand-menu-wrapper{
+        font-size: 3.2em;
+        margin: 3em 0 1em 0;
+    }
+
     .price-panel-header{
         font-size: 2.2rem;
     }
@@ -317,5 +439,19 @@ h2{
 
     .price-panel-pricing{
         font-size: 1.6rem;
+    }
+
+    .enquire-button-outter-wrapper button{
+        width: 240px;
+        height: 60px;
+        font-size: 1.8em;
+    }
+
+    .about-us-header{
+        font-size: 1.6em;
+    }
+
+    .about-us, .rights-reserved{
+        font-size: 1.2em;
     }
 }
