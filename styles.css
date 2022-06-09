@@ -1,5 +1,6 @@
 body{
     background-color: #f5d9d5;
+    /* background-color: green; */
 }
 
 nav{
@@ -19,6 +20,7 @@ h1{
     font-family: 'Roboto', sans-serif;
     font-size: 700;
     font-size: 2.5em;
+    margin: 0 0.25em;
 }
 
 .desertLand-wrapper{
@@ -56,12 +58,11 @@ h1{
 h2{
     text-align: center;
     padding: 0.5em 0;
-    
+    font-size: 1.6rem;
 }
 
 .wrapper-header{
     font-weight: 600;
-    font-size: 1.6rem;
 }
 
 .main-section{
@@ -71,6 +72,7 @@ h2{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     padding: 2em;
 }
 
@@ -81,10 +83,6 @@ h2{
 .wrapper-section-reverse{
     display:flex;
     flex-direction: column;
-}
-
-.candy-logo{
-    display: none;
 }
 
 .image-table{
@@ -109,13 +107,78 @@ h2{
     position: relative;
 }
 
+.desertLand-menu-wrapper{
+    font-family: 'Roboto', sans-serif;
+    margin: 4em 0 1.4em 0;
+    font-weight: 700;
+}
+
+
+/* Pricing panel styles */
+.pricing-panel{
+    margin: 0 2.5%;
+    padding: 1%;
+}
+
+.price-panel-wrapper{
+    display: flex;
+    justify-content: center;
+}
+
+.price-panel-img{
+    width: 25%;
+    height: auto;
+    padding: calc(10%/8);
+    box-sizing: border-box;
+    border-left: 1px solid black;
+    border-top: 1px solid black;
+}
+
+.price-panel-header{
+    width: 25%;
+    padding: calc(10%/8);
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.65rem;
+    font-weight: 700;
+    border-left: 1px solid black;
+}
+
+.price-panel-description{
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.45rem;
+    font-weight: 400;
+    padding: calc(10%/8);
+    width: 25%;
+    border-left: 1px solid black;
+}
+
+.price-panel-pricing{
+    font-family: 'Roboto', sans-serif;
+    border-left: 1px solid black;
+    font-size: 0.5rem;
+    font-weight: 700;
+    width: 25%;
+    padding: calc(10%/8);
+    border-bottom: 1px solid black;
+    text-align: left;
+}
+
+.price-panel-img:last-of-type ,.price-panel-header:last-of-type, .price-panel-description:last-of-type, .price-panel-pricing:last-of-type{
+    border-right: 1px solid black;
+}
+
+.price-panel-img:first-of-type{
+    border-top-left-radius: 5px;
+}
+
+.price-panel-img:last-of-type{
+    border-top-right-radius: 5px;
+}
+
 @media (min-width: 560px){
     .main-section{
         font-size: 1em;
-    }
-
-    .wrapper-header{
-        font-size: 1.6rem;
     }
 
     .carousel-inner .carousel-image-sizing{
@@ -123,7 +186,19 @@ h2{
     }
 
     h1{
-        font-size: 3.2em;
+        font-size: 3em;
+    }
+
+    .price-panel-header{
+        font-size: 1.2rem;
+    }
+
+    .price-panel-description{
+        font-size: 0.7rem;
+    }
+
+    .price-panel-pricing{
+        font-size: 0.7rem;
     }
 }
 
@@ -140,6 +215,7 @@ h2{
 
     .candy-logo{
         display: flex;
+        align-items: center;
         justify-content: center;
         color: crimson;
     }
@@ -160,6 +236,18 @@ h2{
     h1{
         font-size: 3.6em;
     }
+
+    .price-panel-header{
+        font-size: 1.6rem;
+    }
+
+    .price-panel-description{
+        font-size: 1rem;
+    }
+
+    .price-panel-pricing{
+        font-size: 1rem;
+    }
 }
 
 @media (min-width: 1260px){
@@ -167,8 +255,37 @@ h2{
         font-size: 1.3em;
     }
 
-    .wrapper-header{
+    h2{
         font-size: 2rem;
+    }
+
+    .desertLand-menu-wrapper{
+        margin: 6em 0 2em 0;
+    }
+
+    .price-panel-img{
+        border-left: 2px solid black;
+        border-top: 2px solid black;
+    }
+
+    .price-panel-header{
+        font-size: 2rem;
+        border-left: 2px solid black;
+    }
+
+    .price-panel-description{
+        font-size: 1.2rem;
+        border-left: 2px solid black;
+    }
+
+    .price-panel-pricing{
+        font-size: 1.4rem;
+        border-left: 2px solid black;
+        border-bottom: 2px solid black;
+    }
+
+    .price-panel-img:last-of-type ,.price-panel-header:last-of-type, .price-panel-description:last-of-type, .price-panel-pricing:last-of-type{
+        border-right: 2px solid black;
     }
 }
 
@@ -178,7 +295,7 @@ h2{
         font-size: 1.6em;
     }
 
-    .wrapper-header{
+    h2{
         font-size: 2.4rem;
     }
 
@@ -188,5 +305,17 @@ h2{
 
     h1{
         font-size: 6em;
+    }
+
+    .price-panel-header{
+        font-size: 2.2rem;
+    }
+
+    .price-panel-description{
+        font-size: 1.4rem;
+    }
+
+    .price-panel-pricing{
+        font-size: 1.6rem;
     }
 }
